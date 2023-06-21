@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap'); /* Font */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Inicio menu lateral */
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #22223b;
+    padding: 20px 0 20px 0%;
+    box-shadow: 3px 0 0 #ff6700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    width: 250px;
+    height: 76px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+ul li.item-menu:hover{
+    background-color: #ff7900;
+}
+
+ul li.item-menu a{  
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    color: white; /* cor da letra */
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon i{
+    color: white;
+   font-size: 30px; 
+}
+
+.item-menu{
+    margin-top: 90px;
+}
+/* Fim menu lateral */
+
+
+/* Inicio do corpo do site */
+body{
+    background-color: #22223b;
+    color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+h1{
+    font-weight: 300;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 210px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 75px;
+    
+}
+
+span{
+    color: #ff6700;
+}
+
+p{
+    line-height: 30px;
+    max-width: 500px;
+
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff6700;
+    transition: 0.3s all;
+}
+
+#inscreva-se-button{
+    border: 2px solid #ff6700;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-button:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+/* Inicio do corpo do site */
+
+
+/* Inicio tecnicos */
+.planos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    animation: planos 3s;
+}
+.retPlanos{
+    
+    position:relative;
+    text-align: center;
+    margin-top: 100px;
+    width: 250px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding:50px;
+    transition: 1s;
+    transition: 0.5s;
+   border-radius: 20px;
+  
+    
+}
+
+.retPlanos:hover{
+
+        color: #fff;
+        transform:scale(1.1);
+        transform:matrix3d(160deg);
+       
+        
+        
+    }
+
+
+.inscrevaSe{
+    display: inline-block;
+    position: relative;
+    background-color: #FF6700;
+    padding: 5px 30px 5px 30px;
+    bottom: 0;
+    font-size: 1em;
+    border-radius: 15px;
+}
+
+.inscrevaSe:hover{
+    transition: 1s;
+    background-color: rgba(0, 0, 0);
+}
+
+
+.retPlanos h1{
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+.retPlanos h4{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 900;
+
+    
+}
+
+.retPlanos h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 50px;
+}
+
+
+
+
+@media screen and (min-width: 1600px){
+
+    .retPlanos h1{
+        font-size: 2em;;
+    }
+
+    .retPlanos h4{
+        font-size: 1.8em;;
+    }
+    .retPlanos{
+        width: 300px;
+        margin-bottom: 70px;
+    }
+
+    .inscrevaSe{
+        background-color: #FF6700;
+        padding: 15px 40px 15px 40px;
+        bottom: 0;
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width:420px){
+
+    @keyframes planos {
+        from {left: -500px;}
+        to {left: 0;}
+      }
+
+      body{
+          background-position-x: -800px;
+      }
+
+      .planos{
+ 
+    
+        position: relative;
+        animation: planos 3s;
+    }
+
+
+}
+
+.is-rounded {
+
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: -3px;
+    margin-bottom: 30px;
+    border-radius: 1000px;
+    
+   
+}
+/* Fim tecnicos */
+
+
+/* Inicio roda pé */
+footer{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+footer img{
+    width: 30px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+footer p{
+    display: block;
+}
+
+.socials{
+    display: flex;
+    margin-left: -60px;
+}
+
+@media screen and (min-width: 1600px){
+    footer p{
+        font-size: 1.3em;
+    }
+
+    footer img{
+        width: 50px;
+    }
+
+}
+
+
+@media (max-width: 700px){
+
+    footer{
+        margin-top: 0;
+    }
+
+    footer p{
+    margin-top: 0;
+    font-size: 0.8em;
+    }
+
+}
+
+.contat{
+
+    margin-bottom: 100px;
+    margin-left: -100px;
+    margin-top: -70px;
+}
+
+.acompanhe {
+
+    margin-bottom: 50px;
+    margin-left: -20px;
+}
+
+.mobicons{
+
+    display: flex;
+    margin-left: -50px;
+
+}
+
+.wpp {
+    margin-left: 900px; 
+}
+/* Fim roda pé */
